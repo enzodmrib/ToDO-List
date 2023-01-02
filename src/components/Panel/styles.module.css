@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.createdTasks {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.finishedTasks {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+.counterBadge {
+  margin-left: 0.5rem;
+  border-radius: 999px;
+  background: var(--gray-400);
+  color: var(--gray-300);
+  padding: 0.125rem 0.5rem;
+}
+
+.noTasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: var(--gray-300);
+}
+
+.noTasks img {
+  margin-bottom: 1rem;
+}

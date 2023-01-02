@@ -1,0 +1,47 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.checkbox:focus {
+
+}
+
+.checkbox:hover > .unchecked, .checkbox:focus > .unchecked {
+  background: var(--blue-dark);
+  filter: brightness(.70)
+}
+
+.checkbox:hover > .checked, .checkbox:focus > .checked  {
+  background: var(--purple);
+}
+
+.checkbox>div {
+  width: 17.45px;
+  height: 17.45px;
+  border-radius: 999px;
+
+  transition: background 0.2s;
+}
+
+.unchecked {
+  border: 1px solid var(--blue);
+  background: transparent;
+}
+
+.checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--gray-100);
+  background: var(--purple-dark);
+}

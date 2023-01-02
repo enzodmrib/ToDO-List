@@ -1,0 +1,14 @@
+.todo {
+  margin-top: -1.688rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 46rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  column-gap: 0.5rem;
+  margin-bottom: 4rem;
+}

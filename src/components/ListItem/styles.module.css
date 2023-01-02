@@ -1,0 +1,68 @@
+.listItem {
+  width: 100%;
+  padding: 1rem;
+  font-size: 14px;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+li + li {
+  margin-top: 0.75rem;
+}
+
+.listItemInfo {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.finishedListItem {
+  color: var(--gray-300);
+  width: 100%;
+  padding: 1rem;
+  font-size: 14px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-500);
+  border-radius: 8px;
+  text-decoration: line-through;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.description {
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.removeTask {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--gray-300);
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: color 0.2s, background 0.2s;
+
+  cursor: pointer;
+}
+
+.removeTask:hover {
+  color: var(--danger);
+  background: var(--gray-400);
+}
+
+.removeTask:focus {
+  color: var(--danger);
+  background: var(--gray-400);
+}
